@@ -30,12 +30,12 @@ public class BibliotecaAppTest {
 
     @Test
     public void testIfShowsMenu() {
-
+        final ByteArrayOutputStream outPut = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outPut));
+        BibliotecaApp.showInputMenu();
+        assertEquals("Enter the number of your choice:\n" +
+                "1 - List of books\n" +
+                "0 - Quit\n",outPut.toString());
     }
 
-//    @Test
-//    public void testIfShowsMenu(){
-//        String outPut = Menu.showMenu();
-//        assertEquals("1) List of books", outPut);
-//    }
 }

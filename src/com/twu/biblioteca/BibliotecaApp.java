@@ -9,6 +9,7 @@ public class BibliotecaApp {
     public static void main(String[] args) {
         BibliotecaApp.showWelcomeMessage();
         BibliotecaApp.showInputMenu();
+        BibliotecaApp.setOptionInput();
     }
 
     public static void showWelcomeMessage(){
@@ -19,6 +20,11 @@ public class BibliotecaApp {
     public static void showInputMenu() {
         Menu menu = new Menu();
         menu.show();
+    }
+
+    public static void setOptionInput() {
+        Menu menu = new Menu();
+        menu.setOptionInput();
     }
 
 
