@@ -1,22 +1,13 @@
 package com.twu.biblioteca;
 
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
+import static org.junit.Assert.assertEquals;
 
-public class BibliotecaAppTest {
-
-
-    @Test
-    public void testIfShowsWelcomeMessage() {
-        final ByteArrayOutputStream outPut = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(outPut));
-        BibliotecaApp.showWelcomeMessage();
-        assertEquals("Welcome to Biblioteca. You one-stop-shop for great book titles in Bangalore!" + "\n",outPut.toString());
-    }
-
+public class LibraryTest {
     @Test
     public void testIfShowsBookList() {
         Library library = new Library(Library.getDefaultBooks());
@@ -29,15 +20,32 @@ public class BibliotecaAppTest {
     }
 
     @Test
-    public void testIfShowsMenu() {
+    public void testIfItGetsBookByIdWithValidId() {
+        Library library = new Library(Library.getDefaultBooks());
+        Book book = library.getById(1);
+        int book_id = book.getId();
+        assertEquals(1, book_id);
+    }
+
+    @Test
+    public void testIfBookIsCheckedOut() {
+        Library library = new Library(Library.getDefaultBooks());
         final ByteArrayOutputStream outPut = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outPut));
-        BibliotecaApp.showInputMenu();
-        assertEquals("Enter the number of your choice:\n" +
-                "1 - List of books\n" +
-                "2 - Checkout book\n" +
-                "0 - Quit\n",outPut.toString());
+        library.checkoutBook("1");
+        assertEquals("Thank you! Enjoy the book!\n", outPut.toString());
     }
+
+    @Test
+    public void testIfOnlyAvailableBooksAppear() {
+        Library library = new Library(Library.getDefaultBooks());
+        library.show();
+
+    }
+
+
+
+
 
 
 
