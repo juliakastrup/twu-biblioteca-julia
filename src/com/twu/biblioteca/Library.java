@@ -12,14 +12,11 @@ public class BookList {
     }
 
     public static void show() {
-        List<Book> books = new ArrayList<>();
         List<String> newList = new ArrayList<>();
         for (Book book : bookList) {
             newList.add(book.toString());
         }
         newList.forEach(book -> System.out.println(book));
     }
-
-
 
 }
