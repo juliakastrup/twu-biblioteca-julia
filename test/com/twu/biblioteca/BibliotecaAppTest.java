@@ -19,13 +19,13 @@ public class BibliotecaAppTest {
 
     @Test
     public void testIfShowsBookList() {
-        BookList bookList = new BookList(Book.populateLibrary());
+        Library library = new Library(Library.getDefaultBooks());
         final ByteArrayOutputStream outPut = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outPut));
-        bookList.show();
-        assertEquals("Title: A menina que roubava livros - Author: Markus Zusak - Year: 2005\n" +
-                "Title: Moby Dick - Author: Herman Melville - Year: 2008\n" +
-                "Title: Cachalote - Author: Daniel Galera - Year: 2010\n",outPut.toString());
+        library.show();
+        assertEquals("ID: 1 - Title: A menina que roubava livros - Author: Markus Zusak - Year: 2005\n" +
+                "ID: 2 - Title: Moby Dick - Author: Herman Melville - Year: 2008\n" +
+                "ID: 3 - Title: Cachalote - Author: Daniel Galera - Year: 2010\n",outPut.toString());
     }
 
     @Test
@@ -35,7 +35,10 @@ public class BibliotecaAppTest {
         BibliotecaApp.showInputMenu();
         assertEquals("Enter the number of your choice:\n" +
                 "1 - List of books\n" +
+                "2 - Checkout book\n" +
                 "0 - Quit\n",outPut.toString());
     }
+
+
 
 }
