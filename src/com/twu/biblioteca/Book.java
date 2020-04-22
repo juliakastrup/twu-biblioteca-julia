@@ -32,6 +32,10 @@ public class Book {
         this.availability = false;
     }
 
+    public void checkin(){
+        this.availability = true;
+    }
+
     public Boolean getAvailability(){
         return availability;
     }

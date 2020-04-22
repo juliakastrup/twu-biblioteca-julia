@@ -1,5 +1,6 @@
 package com.twu.biblioteca;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +20,14 @@ public class Library {
         newList.forEach(book -> System.out.println(book));
     }
 
+    public void showAllBooks() {
+        List<String> newList = new ArrayList<>();
+        for (Book book : bookList) {
+            newList.add(book.toString());
+        }
+        newList.forEach(book -> System.out.println(book));
+    }
+
     public List listAvailableItems(){
         List<String> newList = new ArrayList<>();
         for (Book book : bookList) {
@@ -31,7 +40,14 @@ public class Library {
 
     public Book getById(int id) {
         Book bookObj = bookList.stream()
-                .filter(book -> book.getId() == id)
+                .filter(book -> {
+                    try {
+                        return book.getId() == id;
+                    } catch (IndexOutOfBoundsException e) {
+                        //
+                    }
+                    return false;
+                })
                 .collect(toList()).get(0);
         return bookObj;
     }
@@ -41,6 +57,13 @@ public class Library {
         Book book = getById(id);
         book.checkout();
         System.out.println("Thank you! Enjoy the book!");
+    }
+
+    public void checkinBook(String string_id) {
+        int id = Integer.parseInt(string_id);
+        Book book = getById(id);
+        book.checkin();
+        System.out.println("Thank you for returning the book!");
     }
 
     public static List<Book> getDefaultBooks() {
