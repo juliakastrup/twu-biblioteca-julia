@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="96660571-516f-4e6f-95e4-69fd21198dbb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Library.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +150,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586479571890</updated>
       <workItem from="1587346197352" duration="22848000" />
-      <workItem from="1587525708966" duration="2904000" />
+      <workItem from="1587525708966" duration="3716000" />
     </task>
     <servers />
   </component>
@@ -221,32 +215,32 @@
       <screen x="-1920" y="63" width="1920" height="1057" />
     </state>
     <state x="-1208" y="445" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.63.1920.1057/0.23.1792.1097@-1920.63.1920.1057" timestamp="1587417383152" />
-    <state width="939" height="303" key="GridCell.Tab.0.bottom" timestamp="1587529171451">
+    <state width="939" height="303" key="GridCell.Tab.0.bottom" timestamp="1587529262604">
       <screen x="-1920" y="63" width="1920" height="1057" />
     </state>
     <state width="1878" height="341" key="GridCell.Tab.0.bottom/-1920.40.1920.1080/0.0.1792.1120@-1920.40.1920.1080" timestamp="1587345675335" />
-    <state width="939" height="303" key="GridCell.Tab.0.bottom/-1920.63.1920.1057/0.23.1792.1097@-1920.63.1920.1057" timestamp="1587529171451" />
+    <state width="939" height="303" key="GridCell.Tab.0.bottom/-1920.63.1920.1057/0.23.1792.1097@-1920.63.1920.1057" timestamp="1587529262604" />
     <state width="1750" height="341" key="GridCell.Tab.0.bottom/-44.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1587063808870" />
     <state width="1750" height="303" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1587359473430" />
-    <state width="939" height="303" key="GridCell.Tab.0.center" timestamp="1587529171450">
+    <state width="939" height="303" key="GridCell.Tab.0.center" timestamp="1587529262603">
       <screen x="-1920" y="63" width="1920" height="1057" />
     </state>
     <state width="1878" height="341" key="GridCell.Tab.0.center/-1920.40.1920.1080/0.0.1792.1120@-1920.40.1920.1080" timestamp="1587345675333" />
-    <state width="939" height="303" key="GridCell.Tab.0.center/-1920.63.1920.1057/0.23.1792.1097@-1920.63.1920.1057" timestamp="1587529171450" />
+    <state width="939" height="303" key="GridCell.Tab.0.center/-1920.63.1920.1057/0.23.1792.1097@-1920.63.1920.1057" timestamp="1587529262603" />
     <state width="1750" height="341" key="GridCell.Tab.0.center/-44.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1587063808870" />
     <state width="1750" height="303" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1587359473429" />
-    <state width="939" height="303" key="GridCell.Tab.0.left" timestamp="1587529171450">
+    <state width="939" height="303" key="GridCell.Tab.0.left" timestamp="1587529262603">
       <screen x="-1920" y="63" width="1920" height="1057" />
     </state>
     <state width="1878" height="341" key="GridCell.Tab.0.left/-1920.40.1920.1080/0.0.1792.1120@-1920.40.1920.1080" timestamp="1587345675333" />
-    <state width="939" height="303" key="GridCell.Tab.0.left/-1920.63.1920.1057/0.23.1792.1097@-1920.63.1920.1057" timestamp="1587529171450" />
+    <state width="939" height="303" key="GridCell.Tab.0.left/-1920.63.1920.1057/0.23.1792.1097@-1920.63.1920.1057" timestamp="1587529262603" />
     <state width="1750" height="341" key="GridCell.Tab.0.left/-44.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1587063808869" />
     <state width="1750" height="303" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1587359473429" />
-    <state width="939" height="303" key="GridCell.Tab.0.right" timestamp="1587529171451">
+    <state width="939" height="303" key="GridCell.Tab.0.right" timestamp="1587529262604">
       <screen x="-1920" y="63" width="1920" height="1057" />
     </state>
     <state width="1878" height="341" key="GridCell.Tab.0.right/-1920.40.1920.1080/0.0.1792.1120@-1920.40.1920.1080" timestamp="1587345675334" />
-    <state width="939" height="303" key="GridCell.Tab.0.right/-1920.63.1920.1057/0.23.1792.1097@-1920.63.1920.1057" timestamp="1587529171451" />
+    <state width="939" height="303" key="GridCell.Tab.0.right/-1920.63.1920.1057/0.23.1792.1097@-1920.63.1920.1057" timestamp="1587529262604" />
     <state width="1750" height="341" key="GridCell.Tab.0.right/-44.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1587063808870" />
     <state width="1750" height="303" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1587359473429" />
     <state width="939" height="357" key="GridCell.Tab.1.bottom" timestamp="1587526189262">
