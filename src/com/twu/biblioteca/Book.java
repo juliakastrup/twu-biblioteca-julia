@@ -28,11 +28,11 @@ public class Book {
     }
 
 
-    public void checkout() {
+    public void checkoutItem() {
         this.availability = false;
     }
 
-    public void checkin(){
+    public void returnItem(){
         this.availability = true;
     }
 

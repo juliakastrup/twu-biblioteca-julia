@@ -3,6 +3,7 @@ package com.twu.biblioteca;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 public class BookTest {
     @Test
@@ -15,8 +16,8 @@ public class BookTest {
     @Test
     public void testIfBookIsCheckedOut() {
         Book book = new Book(1, "A menina que roubava livros","Markus Zusak", 2005, true);
-        book.checkout();
-        assertEquals(book.availability, false);
+        book.checkoutItem();
+        assertFalse(book.availability);
     }
 
 }
