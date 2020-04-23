@@ -1,11 +1,10 @@
 package com.twu.biblioteca;
 
-import com.sun.javafx.scene.control.behavior.SliderBehavior;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import static com.twu.biblioteca.Cinema.getDefaultMovies;
 import static com.twu.biblioteca.Library.getDefaultBooks;
 
 public class Menu {
@@ -30,6 +29,7 @@ public class Menu {
 
     private void redirectToOption(String selectedOption) {
         Library library = new Library(getDefaultBooks());
+        Cinema cinema = new Cinema(getDefaultMovies());
         switch (selectedOption){
             case "1":
                 showBookList(library);
@@ -38,7 +38,13 @@ public class Menu {
                 checkoutBook(library);
                 break;
             case "3":
-                checkinBook(library);
+                returnBook(library);
+                break;
+            case "4":
+                showMovieList(cinema);
+                break;
+            case "5":
+                checkoutMovie(cinema);
                 break;
             case "0":
                 quitApplication();
@@ -50,6 +56,7 @@ public class Menu {
 
     private void showBookList(Library library){
         library.show();
+
     }
 
     private void showFullBookList(Library library){
@@ -63,14 +70,18 @@ public class Menu {
         Scanner scan = new Scanner(System.in);
         String selectedOption = scan.next();
         library.checkoutBook(selectedOption);
+        show();
+        setOptionInput();
     }
 
-    private void checkinBook(Library library){
+    private void returnBook(Library library){
         showFullBookList(library);
         System.out.println("Enter the number of the book you want to return!");
         Scanner scan = new Scanner(System.in);
         String selectedOption = scan.next();
-        library.checkinBook(selectedOption);
+        library.returnBook(selectedOption);
+        show();
+        setOptionInput();
     }
 
     private void quitApplication() {
@@ -78,10 +89,14 @@ public class Menu {
     }
 
     private void showInvalidOptionMessage() {
+
         System.out.println("Please select a valid option!");
+        show();
+        setOptionInput();
     }
 
     private void showMenu(){
+        System.out.println("==================M=E=N=U==================");
         System.out.println("Enter the number of your choice:");
         showMenuOptions();
     }
