@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96660571-516f-4e6f-95e4-69fd21198dbb" name="Default Changelist" comment="">
+    <list default="true" id="96660571-516f-4e6f-95e4-69fd21198dbb" name="Default Changelist" comment="fixup! Refactor some methods names in order to achieve ubiquitous language">
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Cinema.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/CinemaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/BibliotecaAppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/BibliotecaAppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" afterDir="false" />
+    </list>
+    <list id="8100939d-c1ae-4382-9d55-4f24853ed9c7" name="Adding unsuccessful checkout of book message" comment="Commited on wrong branch">
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/LibraryTest.class" afterDir="false" />
+    </list>
+    <list id="7a90544a-a764-4051-b94b-eb4f0b9152bd" name="Adding unsuccessful returning of book message" comment="Commited on wrong branch" />
+    <list id="86520a6d-d187-4626-8408-9380caef230f" name="Refactor some methods names in order to achieve ubiquitous language" comment="Commited on wrong branch">
+      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/BookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/BookTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +167,28 @@
       <workItem from="1587346197352" duration="22848000" />
       <workItem from="1587525708966" duration="4252000" />
     </task>
+    <task id="LOCAL-00001" summary="Refactor some methods names in order to achieve ubiquitous language">
+      <created>1587669877860</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587669877860</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding unsuccessful messages when cecking out or returning an invalid book">
+      <created>1587669948329</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587669948329</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Refactor menu flow to improve user experience">
+      <created>1587670075892</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587670075892</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +206,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactor some methods names in order to achieve ubiquitous language" />
+    <MESSAGE value="Adding unsuccessful messages when cecking out or returning an invalid book" />
+    <MESSAGE value="Refactor menu flow to improve user experience" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor menu flow to improve user experience" />
   </component>
   <component name="WindowStateProjectService">
     <state x="546" y="192" key="#BibliotecaApp" timestamp="1586552497634">
@@ -215,6 +258,10 @@
       <screen x="-1920" y="63" width="1920" height="1057" />
     </state>
     <state x="-1208" y="445" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.63.1920.1057/0.23.1792.1097@-1920.63.1920.1057" timestamp="1587417383152" />
+    <state x="-1413" y="194" key="CommitChangelistDialog2" timestamp="1587670084019">
+      <screen x="-1920" y="63" width="1920" height="1057" />
+    </state>
+    <state x="-1413" y="194" key="CommitChangelistDialog2/-1920.63.1920.1057/0.23.1792.1097@-1920.63.1920.1057" timestamp="1587670084019" />
     <state width="939" height="303" key="GridCell.Tab.0.bottom" timestamp="1587529262604">
       <screen x="-1920" y="63" width="1920" height="1057" />
     </state>
