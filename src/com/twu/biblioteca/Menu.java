@@ -23,6 +23,8 @@ public class Menu {
         menuOptions.add("1 - List of books");
         menuOptions.add("2 - Checkout book");
         menuOptions.add("3 - Return book");
+        menuOptions.add("4 - List of movies");
+        menuOptions.add("5 - Checkout movie");
         menuOptions.add("0 - Quit");
         menuOptions.forEach(option -> System.out.println(option));
     }
@@ -52,6 +54,20 @@ public class Menu {
             default:
                 showInvalidOptionMessage();
         }
+    }
+
+    private void checkoutMovie(Cinema cinema) {
+        showMovieList(cinema);
+        System.out.println("Enter the number of your desired movie!");
+        Scanner scan = new Scanner(System.in);
+        String selectedOption = scan.next();
+        cinema.checkoutMovie(selectedOption);
+        show();
+        setOptionInput();
+    }
+
+    private void showMovieList(Cinema cinema) {
+        cinema.show();
     }
 
     private void showBookList(Library library){
