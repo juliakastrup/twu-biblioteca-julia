@@ -1,0 +1,20 @@
+Q1) Anand Beck
+
+SELECT m.name FROM book AS b JOIN checkout_item AS ci on b.id = ci.book_id JOIN member m on ci.member_id = m.id WHERE b.title="The Hobbit";
+
+Q2) 37
+
+SELECT COUNT(id) FROM member WHERE id NOT IN (Select member_id from checkout_item);
+
+
+
+Q4)
+
+INSERT INTO book (id, title) VALUES (11, "The Pragmatic Programmer");
+
+insert into member (id, name) VALUES (43, "Júlia Kastrup Bezerra");
+
+INSERT INTO checkout_item (member_id, book_id) VALUES (43, 11);
+
+SELECT m.name FROM book AS b JOIN checkout_item AS ci on b.id = ci.book_id JOIN member m on ci.member_id = m.id WHERE b.title="The Pragmatic Programmer";
+
